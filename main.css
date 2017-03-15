@@ -12,23 +12,23 @@ ul {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 2.5rems;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.5rems;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 nav {
   font-family: 'Oswald', sans-serif;
-  font-size: 1rems;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: .5em;
 }
@@ -63,31 +63,130 @@ header {
 }
 
 header p nav {
+
+}
+header figure .logo {
+  flex: 3;
+}
+
+header nav {
   flex: 1;
+}
+
+header h1 {
+  margin-top: 110px;
+  color: #eaeaea;
+  font-size: 4rem;
+}
+
+header p strong {
+  margin-top: 230px;
+  font-size: .9rem;
 }
 
 /*======================
  MAIN CONTENT
 =======================*/
-.posts {
+.main-content, aside {
   display: flex;
+  margin: 0 auto;
+  width: 85%;
+}
+
+article {
+  flex-direction: column;
+  flex: 3;
+  padding: 1rem;
+}
+
+.main-content article h1 {
+  font-size: 3.5rem;
+  color: #083452;
+  line-height: 56px;
+  margin-bottom: 5px;
+}
+aside {
+  flex-direction: column;
+  flex: 1;
+}
+
+.communications ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.connect-icon {
+  background-color: #5e686f;
+}
+.communications ul li a {
+  background-color: #a3b3bf;
+}
+
+.communications ul li a span {
+  background-color: #106db3;
+}
+
+.posts {
+  /*display: flex;
+  flex-direction: row;*/
+
 }
 
 .posts ul li {
   display: inline-block;
+  position: relative;
 }
 
 .posts a {
   padding: 1em;
   color: white;
   font-family: 'Oswald', sans-serif;
-  font-size: 1rems;
+  font-size: 1rem;
   text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+.posts h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #083452;
+}
+
+.blockquote {
+  color: #297cbb;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  border-left: 2px solid #eaeaea;
 }
 /*======================
  ASIDE
 =======================*/
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+aside h3 {
+  text-align: center;
+  color: #2977b7;
+  font-size: 0.9rem;
+}
 
+aside ul li {
+  display: inline-block;
+}
+
+aside ul li a {
+  color: #b5c1cb;
+  text-decoration: none;
+}
+
+aside ul {
+  margin-top: -8px;
+}
 /*======================
  FOOTER
 =======================*/
