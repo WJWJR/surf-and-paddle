@@ -3,46 +3,50 @@
 <head>
   <title>Surf and Paddle</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
   <header>
     <p>
-      <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/logo.png" alt="logo">
+      <img class="logo" src="images/logo.png" alt="logo">
+      <span class="company-name">Surf & Paddle Co. Blog</span>
     </p>
-    <h1>Surf & Paddle Co. Blog</h1>
-    <ul>
-      <li>About</li>
-      <li>Search</li>
-    </ul>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Search</li>
+        <li><img src="images/search-icon.png" alt="search-icon"></li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Surf & Paddle Co.</h1>
+      <p><strong>An IronYard Acdemy Project Est. Fall 2013</strong></p>
+    </section>
   </header>
-  <section>
-    <p>
-      <img class="main-image" src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/header.jpg" alt="main image">
-    </p>
-    <p><strong>An IronYard Acdemy Project Est. Fall 2013</strong></p>
+  <section class="main-content">
+    <article>
+      <h1>A fantastic engaging headline goes here</h1>
+      <p>
+        <img src="images/avatar.png" alt="avatar image">
+      </p>
+      <p><a href="#">Anne Marie</a> on Monday Oct 7 9:22pm</p>
+      <p>Art party butcher authentic, chambray paleo kitsch biodiesel dreamcatcher gluten-free listicle chillwave thundercats. Fap polaroid microdosing put a bird on it lomo green juice authentic, leggings slow-carb umami venmo actually taxidermy cray godard. Listicle bushwick deep v vape iPhone schlitz man bun, helvetica hella man braid fanny pack woke. </p>
+      <p>Fashion axe try-hard iceland cold-pressed, selvage selfies subway tile. Tattooed farm-to-table kale chips gochujang twee gentrify. Succulents letterpress polaroid williamsburg ethical, scenester fap iPhone iceland.</p>
+      <p class="blockquote"> Whoa, that's radical!</p>
+      <p>Succulents letterpress polaroid williamsburg ethical, scenester fap iPhone iceland. Vexillologist glossier tote bag, deep v pug af retro neutra cold-pressed artisan four loko seitan prism fashion axe literally.</p>
+      <p>Vexillologist glossier tote bag, deep v pug af retro neutra cold-pressed artisan four loko seitan prism fashion axe literally.</p>
+    </article>
   </section>
-  <section>
-    <h1>A fantastic engaging headline goes here</h1>
-    <p>
-      <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/avatar.png" alt="avatar image">
-    </p>
-    <p><a href="#">Anne Marie</a> on Monday Oct 7 9:22pm</p>
-    <p>Art party butcher authentic, chambray paleo kitsch biodiesel dreamcatcher gluten-free listicle chillwave thundercats. Fap polaroid microdosing put a bird on it lomo green juice authentic, leggings slow-carb umami venmo actually taxidermy cray godard. Listicle bushwick deep v vape iPhone schlitz man bun, helvetica hella man braid fanny pack woke. </p>
-    <p>Fashion axe try-hard iceland cold-pressed, selvage selfies subway tile. Tattooed farm-to-table kale chips gochujang twee gentrify. Succulents letterpress polaroid williamsburg ethical, scenester fap iPhone iceland.</p>
-    <p class="blockquote"> Whoa, that's radical!</p>
-    <p>Succulents letterpress polaroid williamsburg ethical, scenester fap iPhone iceland. Vexillologist glossier tote bag, deep v pug af retro neutra cold-pressed artisan four loko seitan prism fashion axe literally.</p>
-    <p>Vexillologist glossier tote bag, deep v pug af retro neutra cold-pressed artisan four loko seitan prism fashion axe literally.</p>
-  </section>
-  <section>
+  <section class="communications">
     <ul>
-      <li><a href="#">Read Comments</a></li>
-      <li><a href="#">Read Later</a></li>
-      <li><a href="#">Share This Post</a></li>
+      <li><img class="connect-icon" src="images/icon-comment.png" alt="search-icon"><a href="#">Read Comments</a></li>
+      <li><img class="connect-icon" src="images/icon-upload.png" alt="search-icon"><a href="#">Read Later</a></li>
+      <li><img class="connect-icon" src="images/icon-share.png" alt="search-icon"><a href="#">Share This Post</a></li>
     </ul>
   </section>
 <aside>
   <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/avatar.png" alt="avatar image">
+    <img src="images/avatar.png" alt="avatar image">
   </p>
   <h3>Anne Marie</h3>
   <ul>
@@ -51,7 +55,7 @@
     <li><a href="#">Instagram</a></li>
   </ul>
   <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/ad.jpg" alt="woman on paddle image">
+    <img src="images/ad.jpg" alt="woman on paddle image">
     <a href="#">About This Ad</a>
   </p>
   <h2>Sidebar Section Heading</h2>
@@ -60,28 +64,30 @@
   </p>
 </aside>
 <hr>
-<section>
+<section class="posts">
   <h2>Most Popular Posts</h2>
-  <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/article-image-1.jpg" alt="man in sun with surf board">
-    <a href="#">Another Cool Post</a>
-  </p>
-  <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/article-image-2.jpg" alt="Beer">
-    <a href="#">Post Title</a>
-  </p>
-  <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/article-image-3.jpg" alt="man looking up">
-    <a href="#">Here's Another Longer Post Title</a>
-  </p>
-  <p>
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/article-image-4.jpg" alt="lit bar-wildturkey">
-    <a href="#">Oh Cool a Post</a>
-  </p>
+  <ul>
+    <li>
+      <img src="images/article-image-1.jpg" alt="man in sun with surf board">
+      <a href="#">Another Cool Post</a>
+    </li>
+    <li>
+      <img src="images/article-image-2.jpg" alt="Beer">
+      <a href="#">Post Title</a>
+    </li>
+    <li>
+      <img src="images/article-image-3.jpg" alt="man looking up">
+      <a href="#">Here's Another Longer Post Title</a>
+    </li>
+    <li>
+      <img src="images/article-image-4.jpg" alt="lit bar-wildturkey">
+      <a href="#">Oh Cool a Post</a>
+    </li>
+  </ul>
 </section>
 <footer>
   <p class="footer-logo">
-    <img src="/Users/WilliamWeekes/tiy/surf-and-paddle/images/theironyard-logo.png" alt="iron yard logo">
+    <img src="images/theironyard-logo.png" alt="iron yard logo">
     The Ironyard Copyright 2013, All Rights Reserved
   </p>
   <nav>
