@@ -11,15 +11,22 @@ ul {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
   font-size: 2.5rem;
-  text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
+}
+
+h1 h2 {
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 nav {
@@ -30,18 +37,32 @@ nav {
 
 nav ul li {
   display: inline-block;
-  padding: .5em;
+  padding: ;
 }
 
 body {
   width: 1160px;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
 }
 
 
 /*======================
  HEADER
 =======================*/
+header h1 {
+  text-decoration: none;
+  background: url(images/logo.png) no-repeat 0 0;
+  margin: 10px;
+  padding-left: 55px;
+  font-size: 2.5rem;
+}
+
+header h1 a {
+font-size: 2rem;
+}
+
 .main-image {
   width: 100%;
   height: auto;
@@ -54,39 +75,69 @@ header {
   background-position: center;
   height: 355px;
   border-radius: 10px 10px 0 0;
-  display: flex;
 }
 
-.logo {
+header h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #eaeaea;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+header p {
+  text-align: center;
+  margin-top: -60px;
+}
+
+/*.logo {
   margin-left: 95px;
   margin-top: 5px;
+  display: inline-block;
+}
+.company-name {
+  margin-top: 170px;
+  text-align: center;
+  display: inline;
+}
+figure {
+  display: inline-block;
 }
 
-header p nav {
-
-}
-header figure .logo {
-  flex: 3;
-}
-
-header nav {
-  flex: 1;
-}
 
 header h1 {
-  margin-top: 110px;
+  margin-top: -20px;
   color: #eaeaea;
   font-size: 4rem;
-}
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}*/
 
-header p strong {
+/*header figure strong {
   margin-top: 230px;
   font-size: .9rem;
-}
+}*/
 
+nav ul {
+  display: inline-block;
+}
 /*======================
  MAIN CONTENT
 =======================*/
+article img {
+  width: 5%
+}
+article p img {
+  display: inline-block;
+}
+
+.author-section {
+  top: 20px;
+}
+
 .main-content, aside {
   display: flex;
   margin: 0 auto;
@@ -97,6 +148,7 @@ article {
   flex-direction: column;
   flex: 3;
   padding: 1rem;
+  position: relative;
 }
 
 .main-content article h1 {
@@ -117,9 +169,12 @@ aside {
 
 .connect-icon {
   background-color: #5e686f;
+  padding: .3rem;
 }
 .communications ul li a {
   background-color: #a3b3bf;
+  padding: .3rem;
+
 }
 
 .communications ul li a span {
@@ -134,7 +189,11 @@ aside {
 
 .posts ul li {
   display: inline-block;
+  width: 24%;
   position: relative;
+}
+.posts ul li img {
+  width: 100%
 }
 
 .posts a {
@@ -154,12 +213,26 @@ aside {
   color: #083452;
 }
 
-.blockquote {
+blockquote {
   color: #297cbb;
   font-family: 'Oswald', sans-serif;
   font-size: 1.9rem;
   text-transform: uppercase;
   border-left: 2px solid #eaeaea;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+.posts ul li {
+  background-color: #63a0cc;
+}
+
+.posts img.darker{
+  opacity: .25;
+}
+
+.posts img.darker:hover {
+    opacity: .95;
+    transition: 1s;
 }
 /*======================
  ASIDE
@@ -167,7 +240,7 @@ aside {
 figure img {
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 aside h3 {
   text-align: center;
@@ -196,10 +269,15 @@ footer {
   border-radius: 0 0 10px 10px;
   padding-top: 20px;
   padding-bottom: 10px;
+  position: relative;
 }
 
 footer nav a {
   color: #95a8b5;
+}
+nav ul  {
+  margin-left: 826px;
+  margin-top: -20px;
 }
 
 .footer-logo {
